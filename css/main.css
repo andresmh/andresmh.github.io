@@ -1,0 +1,302 @@
+/* -------------------- reset -------------------- */
+
+html, body, div, span, applet, object, iframe,
+h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* -------------------- global positioning -------------------- */
+
+html, body {
+/*	background-color: #f3f3f3;*/
+	width: 100%;
+}
+
+#outerWrapper {
+	width: 960px;
+	margin: 0 auto;
+	padding: 30px 0 100px;
+/*	background: url(../imgs/glow.png) 115px top no-repeat;*/
+	overflow: hidden;
+}
+
+#contentWrapper {
+	width: 740px;
+	float: right;
+}
+
+#andres {
+	font-size:20px;	
+}
+
+#nav {
+	position: fixed;	
+	width: 160px;
+	-webkit-transform: translateZ(0);
+}
+#mobnav {
+	display: none;
+}
+
+/* -------------------- global styling -------------------- */
+
+h1, h2, h3, p, li, a {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+p, h3 {
+	line-height: 1.5em;
+}
+
+a {
+	text-decoration: none;
+}
+
+.hide {
+	display: none;
+}
+
+h1, h2 {
+	text-shadow: 0 1px #fff;
+	color: #333;
+}
+
+h1 {
+	font-size: 70%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+#about, #edu, #interests, #positions, #experience, #training, #projects, #skills, #publications, #articles,
+#presentations, #press, #honors, #mentoring, #service, #teaching {
+	padding-bottom: 46px;
+	padding-top: 30px;
+	/*background: url(../imgs/divider.png) no-repeat bottom;*/
+}
+
+#teaching {
+	padding-top: 30px;
+}
+
+b {
+	font-weight: bold;
+}
+
+i {
+	font-style: italic;
+}
+
+p, #contentWrapper li, h3 {
+	font-size: 15px;
+	color: #000;
+}
+
+/* -------------------- navigation -------------------- */
+
+#portrait {
+	width: 250px;
+	height: 306px;
+	float:left;
+	padding: 0 10px 10px 0;
+}
+
+#portrait a {
+	display: block;
+}
+
+#portrait a span {
+	display: block;
+	overflow: hidden;
+}
+
+nav ol {
+	margin-top: 53px;
+	margin-left: -15px;
+}
+
+nav li a {
+	font-size: 14px;
+	color: #666;
+	padding-left: 10px;
+	border-left: 5px solid #f3f3f3;
+	display: block;
+	line-height: 1.2;
+}
+
+nav li {
+	margin-top: 10px;
+}
+
+nav li a:hover, nav li a:active {
+	color: #333;
+	padding-left: 10px;
+	border-left: 5px solid #333;
+}
+
+/* -------------------- contact info -------------------- */
+
+#contentWrapper #contactInfo ul {
+	float: right;
+	overflow: hidden;
+}
+
+#contentWrapper #contactInfo li {
+	float: left;
+	font-size: 12px;
+	color: #999;
+	background: url(../imgs/sprites.png) no-repeat;
+	line-height: 20px;
+	margin-left: 30px;
+	margin-bottom: 0;
+}
+
+#contentWrapper #contactInfo li:nth-child(1) {
+	padding-left: 23px;
+	background-position: 0 0;
+}
+
+#contentWrapper #contactInfo li:nth-child(2) {
+	padding-left: 15px;
+	background-position: 0 -30px;
+}
+
+#contentWrapper #contactInfo li:nth-child(3) {
+	padding-left: 31px;
+	background-position: 0 -60px;
+}
+
+/* -------------------- content -------------------- */
+
+h1 {
+	font-size: 50px;
+	padding-bottom: 46px;
+	/*background: url(../imgs/divider.png) no-repeat bottom;*/
+}
+
+h2 {
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+span.floatRight {
+	float: right;
+}
+
+section li {
+	margin-bottom: 30px;
+}
+
+#about p, #press li {
+	margin-bottom: 20px;
+}
+
+section li:last-child, #about p:last-child, #press li:last-child {
+	margin-bottom: 0;
+}
+
+section a {
+	color: rgb(0, 66, 118);
+}
+section a:hover {
+	text-decoration:underline;	
+}
+
+#projects li li {
+	list-style-type: disc;
+	margin: 5px 0 5px 40px;
+}
+
+#projects li li:last-child {
+	margin-bottom: 0;
+}
+
+#skills li, #honors li, #mentoring li {
+	margin-bottom: 5px;
+}
+
+#skills li:last-child, #honors li:last-child, #mentoring li:last-child {
+	margin-bottom: 0;
+}
+
+address ul li span {
+	float: right;
+	color: rgb(153, 153, 153);
+}
+/* -------------------- text-indent fx -------------------- */
+
+#publications ul, #articles ul, #presentations ul, #press ul, #teaching li:first-child {
+	/*margin-left: 40px;*/
+}
+
+#teaching li li:first-child {
+	margin-left: 0;
+}
+
+#publications p, #articles p, #presentations p, #press p, #teaching li:first-child p {
+	/*text-indent: -40px*/;
+}
+
+#publications img { float: left; padding-right: 10px; }
+
+#teaching ul ul {
+	margin-left: 80px;
+}
+
+#teaching ul ul p {
+	text-indent: -40px;
+}
+#videos ul li ul li iframe{
+	foat:left;	
+	margin-right:5px;
+}
+
+/*-----------------misc----------*/
+.handheld_only {
+    display: none;
+}

@@ -1,0 +1,226 @@
+/* -------------------- reset -------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* -------------------- global positioning -------------------- */
+
+html, body {
+	width: 100%;
+}
+
+#outerWrapper {
+	overflow: hidden;
+	padding-right: 5pt;
+}
+
+#nav {
+	display: none;
+}
+
+/* -------------------- global styling -------------------- */
+
+h1, h2, h3, p, li, a {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+p, h3 {
+	line-height: 1.5;
+}
+
+/*a {
+	text-decoration: none;
+}*/
+
+.hide {
+	display: none;
+}
+
+h1, h2 {
+	color: #111;
+}
+
+#about, #edu, #interests, #positions, #experience, #training, #projects, #skills, #publications, #articles,
+#presentations, #press, #honors, #mentoring, #service, #teaching {
+	margin-top: 30pt;
+}
+
+b {
+	font-weight: bold;
+}
+
+i {
+	font-style: italic;
+}
+
+p, #contentWrapper li, h3 {
+	font-size: 10pt;
+	color: #333;
+}
+
+/* -------------------- contact info -------------------- */
+
+#contactInfo img, #contentWrapper #contactInfo ul {
+	float: left;
+}
+
+#contactInfo {
+	overflow: hidden;
+	margin-bottom: 30pt;
+}
+
+#contactInfo img {
+	margin-right: 20pt;
+	padding: 2pt;
+	border: 1pt solid #ccc;
+}
+
+#contentWrapper #contactInfo ul {
+	padding-top: 5pt;
+}
+
+#contentWrapper #contactInfo li {
+	font-size: 8pt;
+	color: #333;
+	line-height: 1.5;
+	margin-bottom: 5pt;
+}
+
+#contentWrapper #contactInfo li:last-child {
+	margin-bottom: 0;
+}
+
+#contentWrapper #contactInfo li:nth-child(1):before {
+	content: "Address: ";
+}
+
+#contentWrapper #contactInfo li:nth-child(2):before {
+	content: "Phone: ";
+}
+
+#contentWrapper #contactInfo li:nth-child(3):before {
+	content: "Email: ";
+}
+
+/* -------------------- content -------------------- */
+
+h1 {
+	font-size: 30pt;
+}
+
+h2 {
+	font-size: 20pt;
+	padding-bottom: 5pt;
+	border-bottom: 1pt solid #ccc;
+	margin-bottom: 20pt;
+}
+
+span.floatRight {
+	float: right;
+}
+
+section li, #about p {
+	margin-bottom: 20pt;
+}
+
+section li:last-child {
+	margin-bottom: 0;
+}
+section a {
+    color: #004276;
+	text-decoration: none;
+}
+#projects li li {
+	list-style-type: disc;
+	margin: 5pt 0 5pt 40pt;
+}
+
+#projects li li:last-child {
+	margin-bottom: 0;
+}
+
+#skills li, #honors li, #mentoring li {
+	margin-bottom: 5pt;
+}
+
+#skills li:last-child, #honors li:last-child, #mentoring li:last-child {
+	margin-bottom: 0;
+}
+
+/* -------------------- text-indent fx -------------------- */
+
+#publications ul, #articles ul, #presentations ul, #press ul, #teaching li:first-child {
+	margin-left: 40pt;
+}
+
+#teaching li li:first-child {
+	margin-left: 0;
+}
+
+#publications p, #articles p, #presentations p, #press p, #teaching li:first-child p {
+	text-indent: -40pt;
+}
+
+#teaching ul ul {
+	margin-left: 80pt;
+}
+
+#teaching ul ul p {
+	text-indent: -40pt;
+}
+
+#portrait {display: none !important;}
+/* -------------------- page-break -------------------- */
+
+#about, #positions, #training, #skills, #articles, #presentations, #honors, #service {
+	/*page-break-after: always;*/
+}
+embed {
+	display:none;
+	visibility: none;
+}
