@@ -17,7 +17,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	/* font: inherit; */
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -43,7 +43,14 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+/*---------------------------------UI----------------------------------- */
+.icons{
+	font-size:36px !important; 
+	display: flex !important;
+}
+.sub-titles{
+	margin-left: 15px;
+}
 /* -------------------- global positioning -------------------- */
 
 html, body {
@@ -143,7 +150,7 @@ p, #contentWrapper li, h3 {
 	width: 250px;
 	height: 306px;
 	float:left;
-	padding: 0 10px 10px 0;
+	padding: 0 25px 10px 0;
 }
 
 #portrait a {
@@ -176,7 +183,7 @@ nav li {
 nav li a:hover, nav li a:active {
 	color: #333;
 	padding-left: 10px;
-	border-left: 5px solid #333;
+	border-left: 5px solid #add8e6;
 }
 
 /* -------------------- contact info -------------------- */
@@ -215,12 +222,12 @@ nav li a:hover, nav li a:active {
 
 h1 {
 	font-size: 50px;
-	padding-bottom: 46px;
+	padding-bottom: 20px;
 	/*background: url(../imgs/divider.png) no-repeat bottom;*/
 }
 
 h2 {
-	font-size: 40px;
+	font-size: 30px;
 	margin-bottom: 30px;
 }
 
@@ -265,6 +272,7 @@ section a:hover {
 }
 
 address ul li span {
+	margin-left: 20px;
 	float: right;
 	color: rgb(153, 153, 153);
 }
@@ -292,8 +300,9 @@ address ul li span {
 	text-indent: -40px;
 }
 #videos ul li ul li iframe{
-	foat:left;	
-	margin-right:5px;
+	float:left;	
+	margin-right: 15px;
+    margin-bottom: 15px;
 }
 
 /*-----------------misc----------*/
