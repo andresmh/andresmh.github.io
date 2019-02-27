@@ -1,6 +1,58 @@
+/* -----------------------------You-Tube Vedios------------------------------------------------*/
+.youtube-player {
+	position: relative;
+	/* Use 75% for 4:3 videos */
+	height: 0;
+	overflow: hidden;
+	background: #000;
+	margin: 10px;
+	float: left;
+	}
+	.youtube-player iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	background: transparent;
+	}
+	.youtube-player img {
+	bottom: 0;
+	display: block;
+	left: 0;
+	margin: auto;
+	max-width: 100%;
+	width: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	border: none;
+	height: auto;
+	cursor: pointer;
+	-webkit-transition: .4s all;
+	-moz-transition: .4s all;
+	transition: .4s all;
+	}
+	.youtube-player img:hover {
+	-webkit-filter: brightness(75%);
+	}
+	.youtube-player .play {
+	height: 72px;
+	width: 72px;
+	left: 50%;
+	top: 50%;
+	margin-left: -36px;
+	margin-top: -36px;
+	position: absolute;
+	background: url("//i.imgur.com/TxzC70f.png") no-repeat;
+	cursor: pointer;
+	}
+	
+
 /* -------------------- reset -------------------- */
 
-html, body, div, span, applet, object, iframe,
+html, body, div, span, applet, object, iframe,h1
 h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -16,9 +68,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	/* font: inherit; */
-	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -31,26 +80,7 @@ body {
 ol, ul {
 	list-style: none;
 }
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/*---------------------------------UI----------------------------------- */
-.icons{
-	font-size:36px !important; 
-	display: flex !important;
-}
-.sub-titles{
-	margin-left: 15px;
-}
+
 /* -------------------- global positioning -------------------- */
 
 html, body {
@@ -70,15 +100,8 @@ html, body {
 	width: 740px;
 	float: right;
 }
-
-#andres {
-	font-size:20px;	
-}
-
 #nav {
 	position: fixed;	
-	width: 160px;
-	-webkit-transform: translateZ(0);
 }
 #mobnav {
 	display: none;
@@ -87,7 +110,8 @@ html, body {
 /* -------------------- global styling -------------------- */
 
 h1, h2, h3, p, li, a {
-	font-family: Georgia, "Times New Roman", Times, serif;
+	/* font-family: Georgia, "Times New Roman", Times, serif; */
+	 font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace; 
 }
 
 h1, h2, h3 {
@@ -98,45 +122,17 @@ p, h3 {
 	line-height: 1.5em;
 }
 
-a {
-	text-decoration: none;
-}
+
 
 .hide {
 	display: none;
 }
 
-h1, h2 {
-	text-shadow: 0 1px #fff;
-	color: #333;
-}
-
-h1 {
-	font-size: 70%;
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font: inherit;
-	vertical-align: baseline;
-}
 
 #about, #edu, #interests, #positions, #experience, #training, #projects, #skills, #publications, #articles,
 #presentations, #press, #honors, #mentoring, #service, #teaching {
-	padding-bottom: 46px;
 	padding-top: 30px;
 	/*background: url(../imgs/divider.png) no-repeat bottom;*/
-}
-
-#teaching {
-	padding-top: 30px;
-}
-
-b {
-	font-weight: bold;
-}
-
-i {
-	font-style: italic;
 }
 
 p, #contentWrapper li, h3 {
@@ -147,14 +143,8 @@ p, #contentWrapper li, h3 {
 /* -------------------- navigation -------------------- */
 
 #portrait {
-	width: 250px;
-	height: 306px;
 	float:left;
 	padding: 0 25px 10px 0;
-}
-
-#portrait a {
-	display: block;
 }
 
 #portrait a span {
@@ -193,7 +183,7 @@ nav li a:hover, nav li a:active {
 	overflow: hidden;
 }
 
-#contentWrapper #contactInfo li {
+/* #contentWrapper #contactInfo li {
 	float: left;
 	font-size: 12px;
 	color: #999;
@@ -216,19 +206,14 @@ nav li a:hover, nav li a:active {
 #contentWrapper #contactInfo li:nth-child(3) {
 	padding-left: 31px;
 	background-position: 0 -60px;
-}
+} */
 
 /* -------------------- content -------------------- */
 
 h1 {
 	font-size: 50px;
-	padding-bottom: 20px;
-	/*background: url(../imgs/divider.png) no-repeat bottom;*/
-}
-
-h2 {
-	font-size: 30px;
-	margin-bottom: 30px;
+	/*padding-bottom: 20px;
+	background: url(../imgs/divider.png) no-repeat bottom;*/
 }
 
 span.floatRight {
@@ -247,10 +232,11 @@ section li:last-child, #about p:last-child, #press li:last-child {
 	margin-bottom: 0;
 }
 
-section a {
+ a {
 	color: rgb(0, 66, 118);
+	text-decoration: none;
 }
-section a:hover {
+ a:hover {
 	text-decoration:underline;	
 }
 
@@ -271,23 +257,13 @@ section a:hover {
 	margin-bottom: 0;
 }
 
-address ul li span {
-	margin-left: 20px;
-	float: right;
-	color: rgb(153, 153, 153);
-}
+
 /* -------------------- text-indent fx -------------------- */
 
-#publications ul, #articles ul, #presentations ul, #press ul, #teaching li:first-child {
-	/*margin-left: 40px;*/
-}
+
 
 #teaching li li:first-child {
 	margin-left: 0;
-}
-
-#publications p, #articles p, #presentations p, #press p, #teaching li:first-child p {
-	/*text-indent: -40px*/;
 }
 
 #publications img { float: left; padding-right: 10px; }
@@ -298,11 +274,6 @@ address ul li span {
 
 #teaching ul ul p {
 	text-indent: -40px;
-}
-#videos ul li ul li iframe{
-	float:left;	
-	margin-right: 15px;
-    margin-bottom: 15px;
 }
 
 /*-----------------misc----------*/
