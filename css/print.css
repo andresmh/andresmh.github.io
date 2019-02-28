@@ -43,6 +43,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+#mobnav {
+	display: none;
+}
 
 /* -------------------- global positioning -------------------- */
 
@@ -58,24 +61,6 @@ html, body {
 #nav {
 	display: none;
 }
-
-/* -------------------- global styling -------------------- */
-
-h1, h2, h3, p, li, a {
-	font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-h1, h2, h3 {
-	font-weight: normal;
-}
-
-p, h3 {
-	line-height: 1.5;
-}
-
-/*a {
-	text-decoration: none;
-}*/
 
 .hide {
 	display: none;
@@ -150,14 +135,7 @@ p, #contentWrapper li, h3 {
 /* -------------------- content -------------------- */
 
 h1 {
-	font-size: 30pt;
-}
-
-h2 {
-	font-size: 20pt;
-	padding-bottom: 5pt;
-	border-bottom: 1pt solid #ccc;
-	margin-bottom: 20pt;
+	font-size: 1.8rem;
 }
 
 span.floatRight {
@@ -170,6 +148,9 @@ section li, #about p {
 
 section li:last-child {
 	margin-bottom: 0;
+}
+a {
+    font-family: "et-book";
 }
 section a {
     color: #004276;
@@ -213,14 +194,187 @@ section a {
 #teaching ul ul p {
 	text-indent: -40pt;
 }
-
-#portrait {display: none !important;}
-/* -------------------- page-break -------------------- */
-
-#about, #positions, #training, #skills, #articles, #presentations, #honors, #service {
-	/*page-break-after: always;*/
+.centerImg{
+    width: 200px;
+    height: 250px;
+    padding-bottom: 10px;
 }
+/* -------------------- page-break -------------------- */
+@media print {
+    section {page-break-after: left;}
+  }
 embed {
 	display:none;
 	visibility: none;
 }
+address {
+    font-style: unset !important;
+}
+#videos{
+    display:none;
+}
+@font-face { font-family: "et-book";
+             src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
+             src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg");
+             font-weight: normal;
+             font-style: normal; }
+
+@font-face { font-family: "et-book";
+             src: url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot");
+             src: url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf") format("truetype"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf") format("svg");
+             font-weight: normal;
+             font-style: italic; }
+
+@font-face { font-family: "et-book";
+             src: url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot");
+             src: url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf") format("truetype"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf") format("svg");
+             font-weight: bold;
+             font-style: normal; }
+
+@font-face { font-family: "et-book-roman-old-style";
+             src: url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot");
+             src: url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff") format("woff"), url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.ttf") format("truetype"), url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.svg#etbookromanosf") format("svg");
+             font-weight: normal;
+             font-style: normal; }
+
+/* Tufte CSS styles */
+address {
+    font-style: unset !important;
+}
+html { font-size: 15px; }
+
+body {     font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; }
+
+h1 { margin-bottom: 1.5rem;
+    }
+
+h2 { font-style: italic;
+     font-weight: 400;
+     margin-top: 2.1rem;
+     margin-bottom: 1.4rem;
+     font-size: 1.6rem;
+	 line-height: 1;
+	 border-bottom: 1pt solid #ccc;
+	 }
+
+h3 { font-style: italic;
+     font-weight: 400;
+     font-size: 1.2rem;
+     margin-top: 2rem;
+     margin-bottom: 1.4rem;
+     line-height: 1; }
+
+hr { display: block;
+     height: 1px;
+     width: 55%;
+     border: 0;
+     border-top: 1px solid #ccc;
+     margin: 1em 0;
+     padding: 0; }
+
+p.subtitle { font-style: italic;
+             margin-top: 1rem;
+             margin-bottom: 1rem;
+             font-size: 1.8rem;
+             display: block;
+             line-height: 1; }
+
+.numeral { font-family: et-book-roman-old-style; }
+
+.danger { color: red; }
+
+article { position: relative;
+          padding: 5rem 0rem; }
+
+li:not(:first-child) { margin-top: 0.25rem; }
+
+figure { padding: 0;
+         border: 0;
+         font-size: 100%;
+         font: inherit;
+         vertical-align: baseline;
+         max-width: 55%;
+         -webkit-margin-start: 0;
+         -webkit-margin-end: 0;
+        }
+
+figure.fullwidth figcaption { margin-right: 24%; }
+
+/* Sidenotes, margin notes, figures, captions */
+img { max-width: 100%; }
+
+div.fullwidth, table.fullwidth { width: 100%; }
+
+div.table-wrapper { overflow-x: auto;
+                    font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif; }
+
+.sans { font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+        letter-spacing: .03em; }
+
+code { font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+       font-size: 1.0rem;
+       line-height: 1.42; }
+
+.sans > code { font-size: 1.2rem; }
+
+h1 > code, h2 > code, h3 > code { font-size: 0.80em; }
+
+.marginnote > code, .sidenote > code { font-size: 1rem; }
+
+pre.code { font-size: 0.9rem;
+           width: 52.5%;
+           margin-left: 2.5%;
+           overflow-x: auto; }
+
+pre.code.fullwidth { width: 90%; }
+
+.fullwidth { max-width: 90%;
+             clear:both; }
+
+span.newthought { font-variant: small-caps;
+                  font-size: 1.2em; }
+
+input.margin-toggle { display: none; }
+
+label.sidenote-number { display: inline; }
+
+label.margin-toggle:not(.sidenote-number) { display: none; }
+
+.iframe-wrapper { position: relative;
+                  padding-bottom: 56.25%; /* 16:9 */
+                  padding-top: 25px;
+                  height: 0; }
+
+.iframe-wrapper iframe { position: absolute;
+                         top: 0;
+                         left: 0;
+                         width: 100%;
+                         height: 100%; }
+
+@media (max-width: 760px) { body { width: 84%;
+                                   padding-left: 8%;
+                                   padding-right: 8%; }
+                            hr, section > p, section > footer, section > table { width: 100%; }
+                            pre.code { width: 97%; }
+                            section > ol { width: 90%; }
+                            section > ul { width: 90%; }
+                            figure { max-width: 90%; }
+                            figcaption, figure.fullwidth figcaption { margin-right: 0%;
+                                                                      max-width: none; }
+                            blockquote { margin-left: 1.5em;
+                                         margin-right: 0em; }
+                            blockquote p, blockquote footer { width: 100%; }
+                            label.margin-toggle:not(.sidenote-number) { display: inline; }
+                            .sidenote, .marginnote { display: none; }
+                            .margin-toggle:checked + .sidenote,
+                            .margin-toggle:checked + .marginnote { display: block;
+                                                                   float: left;
+                                                                   left: 1rem;
+                                                                   clear: both;
+                                                                   width: 95%;
+                                                                   margin: 1rem 2.5%;
+                                                                   vertical-align: baseline;
+                                                                   position: relative; }
+                            label { cursor: pointer; }
+                            div.table-wrapper, table { width: 85%; }
+img { width: 100%; } }

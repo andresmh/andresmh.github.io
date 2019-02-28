@@ -106,12 +106,19 @@ html, body {
 #mobnav {
 	display: none;
 }
-
+address {
+    font-style: unset !important;
+}
 /* -------------------- global styling -------------------- */
-
+@font-face { 
+	font-family: "et-book";
+	src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
+	src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
 h1, h2, h3, p, li, a {
-	/* font-family: Georgia, "Times New Roman", Times, serif; */
-	 font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace; 
+	 font-family: "et-book";
 }
 
 h1, h2, h3 {
@@ -160,7 +167,8 @@ nav ol {
 nav li a {
 	font-size: 14px;
 	color: #666;
-	padding-left: 10px;
+/* 	padding-left: 10px; */
+	padding: 6px 0 0 10px;
 	border-left: 5px solid #f3f3f3;
 	display: block;
 	line-height: 1.2;
