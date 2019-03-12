@@ -1,3 +1,4 @@
+
 /* -----------------------------You-Tube Vedios------------------------------------------------*/
 .youtube-player {
 	position: relative;
@@ -143,12 +144,15 @@ p, h3 {
 }
 
 p, #contentWrapper li, h3 {
-	font-size: 15px;
+	font-size: 20px;
 	color: #000;
 }
 
 /* -------------------- navigation -------------------- */
-
+#info{
+	display: flex;
+	float: right;
+}
 #portrait {
 	float:left;
 	padding: 0 25px 10px 0;
@@ -160,28 +164,26 @@ p, #contentWrapper li, h3 {
 }
 
 nav ol {
-	margin-top: 53px;
-	margin-left: -15px;
+	margin-top: 65px;
+	margin-left: -50px;
 }
 
 nav li a {
-	font-size: 14px;
 	color: #666;
-/* 	padding-left: 10px; */
-	padding: 6px 0 0 10px;
+    padding-left: 10px;
 	border-left: 5px solid #f3f3f3;
 	display: block;
-	line-height: 1.2;
 }
 
 nav li {
 	margin-top: 10px;
 }
 
-nav li a:hover, nav li a:active {
+nav li a:hover, nav li a:active{
 	color: #333;
 	padding-left: 10px;
 	border-left: 5px solid #add8e6;
+	text-decoration: none;
 }
 
 /* -------------------- contact info -------------------- */

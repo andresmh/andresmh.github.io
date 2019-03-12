@@ -149,10 +149,8 @@ section li, #about p {
 section li:last-child {
 	margin-bottom: 0;
 }
-a {
-    font-family: "et-book";
-}
-section a {
+
+ a {
     color: #004276;
 	text-decoration: none;
 }
