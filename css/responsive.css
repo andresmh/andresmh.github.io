@@ -1,4 +1,9 @@
 /* site responsiveness css */
+@media (max-width: 1199px) {
+  nav ol {
+    margin-left: unset;
+  }
+}
 @media (min-width: 1025px) {
   .mobile-responsive-menu {
     display: none;
@@ -126,5 +131,33 @@
     padding-left: 10px;
     text-transform: uppercase;
     font-size: 1.2rem;
+  }
+}
+@media (max-width: 991px) {
+  .yt-video {
+    flex-basis: calc(50% - 25px);
+    margin-bottom: 45px;
+  }
+  .yt-video iframe {
+    min-height: 225px;
+  }
+}
+@media (max-width: 767px) {
+  .yt-video {
+    flex-basis: 100%;
+    margin-bottom: 35px;
+  }
+  .yt-video iframe {
+    min-height: 305px;
+  }
+}
+@media (max-width: 575px) {
+  .yt-video iframe {
+    min-height: 225px;
+  }
+}
+@media (max-width: 480px) {
+  .yt-video iframe {
+    min-height: 185px;
   }
 }

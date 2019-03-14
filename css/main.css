@@ -397,3 +397,18 @@ a:hover {
 .handheld_only {
   display: none;
 }
+
+/* ---------- youtube embed section ----------- */
+.yt-wrapper {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.yt-video {
+  flex-basis: calc(50% - 12px);
+  margin-bottom: 20px;
+}
+.yt-video iframe {
+  min-height: 202px;
+}
