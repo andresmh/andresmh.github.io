@@ -1,226 +1,559 @@
 /* -------------------- reset -------------------- */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+#mobnav {
+  display: none;
 }
 
 /* -------------------- global positioning -------------------- */
 
-html, body {
-	width: 100%;
+html,
+body {
+  width: 100%;
 }
-
+@page {
+  /* Chrome sets own margins, we change these printer settings */
+  margin: 18mm 0; 
+}
 #outerWrapper {
-	overflow: hidden;
-	padding-right: 5pt;
+  overflow: hidden;
+  padding-right: 5pt;
 }
 
 #nav {
-	display: none;
+  display: none;
 }
-
-/* -------------------- global styling -------------------- */
-
-h1, h2, h3, p, li, a {
-	font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-h1, h2, h3 {
-	font-weight: normal;
-}
-
-p, h3 {
-	line-height: 1.5;
-}
-
-/*a {
-	text-decoration: none;
-}*/
 
 .hide {
-	display: none;
+  display: none;
 }
 
-h1, h2 {
-	color: #111;
+h1,
+h2 {
+  color: #111;
 }
 
-#about, #edu, #interests, #positions, #experience, #training, #projects, #skills, #publications, #articles,
-#presentations, #press, #honors, #mentoring, #service, #teaching {
-	margin-top: 30pt;
+#about,
+#edu,
+#interests,
+#positions,
+#experience,
+#training,
+#projects,
+#skills,
+#publications,
+#articles,
+#presentations,
+#press,
+#honors,
+#mentoring,
+#service,
+#teaching {
+  margin-top: 30pt;
 }
 
 b {
-	font-weight: bold;
+  font-weight: bold;
 }
 
-i {
-	font-style: italic;
-}
-
-p, #contentWrapper li, h3 {
-	font-size: 10pt;
-	color: #333;
+p,
+#contentWrapper li,
+h3 {
+  font-size: 10pt;
+  color: #333;
 }
 
 /* -------------------- contact info -------------------- */
 
-#contactInfo img, #contentWrapper #contactInfo ul {
-	float: left;
+#contactInfo img,
+#contentWrapper #contactInfo ul {
+  float: left;
 }
 
 #contactInfo {
-	overflow: hidden;
-	margin-bottom: 30pt;
+  overflow: hidden;
+  margin-bottom: 30pt;
 }
 
 #contactInfo img {
-	margin-right: 20pt;
-	padding: 2pt;
-	border: 1pt solid #ccc;
+  margin-right: 20pt;
+  padding: 2pt;
+  border: 1pt solid #ccc;
 }
 
 #contentWrapper #contactInfo ul {
-	padding-top: 5pt;
+  padding-top: 5pt;
 }
 
 #contentWrapper #contactInfo li {
-	font-size: 8pt;
-	color: #333;
-	line-height: 1.5;
-	margin-bottom: 5pt;
+  font-size: 8pt;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 5pt;
 }
 
 #contentWrapper #contactInfo li:last-child {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 #contentWrapper #contactInfo li:nth-child(1):before {
-	content: "Address: ";
+  content: "Address: ";
 }
 
 #contentWrapper #contactInfo li:nth-child(2):before {
-	content: "Phone: ";
+  content: "Phone: ";
 }
 
 #contentWrapper #contactInfo li:nth-child(3):before {
-	content: "Email: ";
+  content: "Email: ";
 }
 
 /* -------------------- content -------------------- */
 
 h1 {
-	font-size: 30pt;
-}
-
-h2 {
-	font-size: 20pt;
-	padding-bottom: 5pt;
-	border-bottom: 1pt solid #ccc;
-	margin-bottom: 20pt;
+  font-size: 1.8rem;
 }
 
 span.floatRight {
-	float: right;
+  float: right;
 }
 
-section li, #about p {
-	margin-bottom: 20pt;
+section li,
+#about p {
+  margin-bottom: 20pt;
 }
 
 section li:last-child {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
-section a {
-    color: #004276;
-	text-decoration: none;
+
+a {
+  color: #004276;
+  text-decoration: none;
 }
 #projects li li {
-	list-style-type: disc;
-	margin: 5pt 0 5pt 40pt;
+  list-style-type: disc;
+  margin: 5pt 0 5pt 40pt;
 }
 
 #projects li li:last-child {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-#skills li, #honors li, #mentoring li {
-	margin-bottom: 5pt;
+#skills li,
+#honors li,
+#mentoring li {
+  margin-bottom: 5pt;
 }
 
-#skills li:last-child, #honors li:last-child, #mentoring li:last-child {
-	margin-bottom: 0;
+#skills li:last-child,
+#honors li:last-child,
+#mentoring li:last-child {
+  margin-bottom: 0;
 }
 
 /* -------------------- text-indent fx -------------------- */
 
-#publications ul, #articles ul, #presentations ul, #press ul, #teaching li:first-child {
-	margin-left: 40pt;
+#publications ul,
+#articles ul,
+#presentations ul,
+#press ul,
+#teaching li:first-child {
+  margin-left: 40pt;
 }
 
 #teaching li li:first-child {
-	margin-left: 0;
+  margin-left: 0;
 }
 
-#publications p, #articles p, #presentations p, #press p, #teaching li:first-child p {
-	text-indent: -40pt;
+#publications p,
+#articles p,
+#presentations p,
+#press p,
+#teaching li:first-child p {
+  text-indent: -40pt;
 }
 
 #teaching ul ul {
-	margin-left: 80pt;
+  margin-left: 80pt;
 }
 
 #teaching ul ul p {
-	text-indent: -40pt;
+  text-indent: -40pt;
 }
-
-#portrait {display: none !important;}
+.centerImg {
+  width: 200px;
+  height: 250px;
+  padding-bottom: 10px;
+}
 /* -------------------- page-break -------------------- */
-
-#about, #positions, #training, #skills, #articles, #presentations, #honors, #service {
-	/*page-break-after: always;*/
-}
 embed {
-	display:none;
-	visibility: none;
+  display: none;
+  visibility: none;
+}
+address {
+  font-style: unset !important;
+}
+#videos {
+  display: none;
+}
+/* Tufte CSS styles */
+address {
+  font-style: unset !important;
+}
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-weight: 400;
+  margin-top: 2.1rem;
+  margin-bottom: 1.4rem;
+  font-size: 1.6rem;
+  line-height: 1;
+  border-bottom: 1pt solid #ccc;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 1.4rem;
+  line-height: 1;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  width: 55%;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+p.subtitle {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  display: block;
+  line-height: 1;
+}
+
+.numeral {
+  font-family: et-book-roman-old-style;
+}
+
+.danger {
+  color: red;
+}
+
+article {
+  position: relative;
+  padding: 5rem 0rem;
+}
+
+li:not(:first-child) {
+  margin-top: 0.25rem;
+}
+
+figure {
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  max-width: 55%;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+}
+
+figure.fullwidth figcaption {
+  margin-right: 24%;
+}
+
+/* Sidenotes, margin notes, figures, captions */
+img {
+  max-width: 100%;
+}
+
+div.fullwidth,
+table.fullwidth {
+  width: 100%;
+}
+
+div.table-wrapper {
+  overflow-x: auto;
+  font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif;
+}
+
+.sans {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 1rem;
+  line-height: 1.42;
+}
+
+.sans > code {
+  font-size: 1.2rem;
+}
+
+h1 > code,
+h2 > code,
+h3 > code {
+  font-size: 0.8em;
+}
+
+.marginnote > code,
+.sidenote > code {
+  font-size: 1rem;
+}
+
+pre.code {
+  font-size: 0.9rem;
+  width: 52.5%;
+  margin-left: 2.5%;
+  overflow-x: auto;
+}
+
+pre.code.fullwidth {
+  width: 90%;
+}
+
+.fullwidth {
+  max-width: 90%;
+  clear: both;
+}
+
+span.newthought {
+  font-variant: small-caps;
+  font-size: 1.2em;
+}
+
+input.margin-toggle {
+  display: none;
+}
+
+label.sidenote-number {
+  display: inline;
+}
+
+label.margin-toggle:not(.sidenote-number) {
+  display: none;
+}
+
+.iframe-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.iframe-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 760px) {
+  body {
+    width: 84%;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  hr,
+  section > p,
+  section > footer,
+  section > table {
+    width: 100%;
+  }
+  pre.code {
+    width: 97%;
+  }
+  section > ol {
+    width: 90%;
+  }
+  section > ul {
+    width: 90%;
+  }
+  figure {
+    max-width: 90%;
+  }
+  figcaption,
+  figure.fullwidth figcaption {
+    margin-right: 0%;
+    max-width: none;
+  }
+  blockquote {
+    margin-left: 1.5em;
+    margin-right: 0em;
+  }
+  blockquote p,
+  blockquote footer {
+    width: 100%;
+  }
+  label.margin-toggle:not(.sidenote-number) {
+    display: inline;
+  }
+  .sidenote,
+  .marginnote {
+    display: none;
+  }
+  .margin-toggle:checked + .sidenote,
+  .margin-toggle:checked + .marginnote {
+    display: block;
+    float: left;
+    left: 1rem;
+    clear: both;
+    width: 95%;
+    margin: 1rem 2.5%;
+    vertical-align: baseline;
+    position: relative;
+  }
+  label {
+    cursor: pointer;
+  }
+  div.table-wrapper,
+  table {
+    width: 85%;
+  }
+  img {
+    width: 100%;
+  }
 }
