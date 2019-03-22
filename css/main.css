@@ -47,9 +47,7 @@
   background: url("../imgs/play.png") no-repeat;
   cursor: pointer;
 }
-
 /* -------------------- reset -------------------- */
-
 html,
 body,
 div,
@@ -155,15 +153,12 @@ ol,
 ul {
   list-style: none;
 }
-
 /* -------------------- global positioning -------------------- */
-
 html,
 body {
   /*	background-color: #f3f3f3;*/
   width: 100%;
 }
-
 #outerWrapper {
   width: 960px;
   margin: 0 auto;
@@ -171,7 +166,6 @@ body {
   /*	background: url(../imgs/glow.png) 115px top no-repeat;*/
   overflow: hidden;
 }
-
 #contentWrapper {
   width: 740px;
   float: right;
@@ -186,164 +180,77 @@ address {
   font-style: unset !important;
 }
 /* -------------------- global styling -------------------- */
-@font-face {
-  font-family: "et-book";
-  src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
-  src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"),
-    url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"),
-    url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"),
-    url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-h1,
-h2,
-h3,
-p,
-li,
-a {
-  font-family: "et-book";
-}
-
 h1,
 h2,
 h3 {
   font-weight: normal;
 }
-
 p,
 h3 {
   line-height: 1.5em;
 }
-
 .hide {
   display: none;
 }
-
-#about,
-#edu,
-#interests,
-#positions,
-#experience,
-#training,
-#projects,
-#skills,
-#publications,
-#articles,
-#presentations,
-#press,
-#honors,
-#mentoring,
-#service,
-#teaching {
-  padding-top: 30px;
-  /*background: url(../imgs/divider.png) no-repeat bottom;*/
-}
-
 p,
-#contentWrapper li,
 h3 {
   font-size: 20px;
   color: #000;
 }
-
 /* -------------------- navigation -------------------- */
 #info {
   display: flex;
   float: right;
+  margin-bottom: 15px;
 }
 #portrait {
   float: left;
   padding: 0 25px 10px 0;
 }
-
 #portrait a span {
   display: block;
   overflow: hidden;
 }
-
-nav ol {
+.desktop-navigation ol {
   margin-left: -50px;
 }
-
-nav li a {
+.desktop-navigation li a {
   color: #666;
   padding-left: 10px;
   border-left: 5px solid #f3f3f3;
   display: block;
 }
-
-nav li {
+.desktop-navigation li {
   margin-top: 5px;
 }
-
-nav li a:hover,
-nav li a:active {
+.desktop-navigation li a:hover,
+.desktop-navigation li a:active {
   color: #333;
   padding-left: 10px;
   border-left: 5px solid #add8e6;
   text-decoration: none;
 }
-
 /* -------------------- contact info -------------------- */
-
 #contentWrapper #contactInfo ul {
   float: right;
   overflow: hidden;
 }
-
-/* #contentWrapper #contactInfo li {
-	float: left;
-	font-size: 12px;
-	color: #999;
-	background: url(../imgs/sprites.png) no-repeat;
-	line-height: 20px;
-	margin-left: 30px;
-	margin-bottom: 0;
-}
-
-#contentWrapper #contactInfo li:nth-child(1) {
-	padding-left: 23px;
-	background-position: 0 0;
-}
-
-#contentWrapper #contactInfo li:nth-child(2) {
-	padding-left: 15px;
-	background-position: 0 -30px;
-}
-
-#contentWrapper #contactInfo li:nth-child(3) {
-	padding-left: 31px;
-	background-position: 0 -60px;
-} */
-
 /* -------------------- content -------------------- */
-
 h1 {
   font-size: 50px;
-  /*padding-bottom: 20px;
-	background: url(../imgs/divider.png) no-repeat bottom;*/
 }
-
 span.floatRight {
   float: right;
 }
-
-section li {
-  margin-bottom: 30px;
-}
-
 #about p,
-#press li {
+#press p {
   margin-bottom: 20px;
 }
-
 section li:last-child,
 #about p:last-child,
 #press li:last-child {
   margin-bottom: 0;
 }
-
 a {
   color: rgb(0, 66, 118);
   text-decoration: none;
@@ -351,52 +258,41 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
 #projects li li {
   list-style-type: disc;
   margin: 5px 0 5px 40px;
 }
-
 #projects li li:last-child {
   margin-bottom: 0;
 }
-
-#skills li,
-#honors li,
-#mentoring li {
+#skills p,
+#honors p,
+#mentoring p {
   margin-bottom: 5px;
 }
-
-#skills li:last-child,
-#honors li:last-child,
+#skills p:last-child,
+#honors p:last-child,
 #mentoring li:last-child {
   margin-bottom: 0;
 }
-
 /* -------------------- text-indent fx -------------------- */
-
 #teaching li li:first-child {
   margin-left: 0;
 }
-
 #publications img {
   float: left;
   padding-right: 10px;
 }
-
 #teaching ul ul {
   margin-left: 80px;
 }
-
 #teaching ul ul p {
   text-indent: -40px;
 }
-
 /*-----------------misc----------*/
 .handheld_only {
   display: none;
 }
-
 /* ---------- youtube embed section ----------- */
 .yt-wrapper {
   margin-top: 30px;
@@ -410,4 +306,12 @@ a:hover {
 }
 .yt-video iframe {
   min-height: 202px;
+}
+#essays p,
+#publications p,
+#service p,
+#teaching p,
+#sub-teaching p,
+#videos p {
+  margin-bottom: 30px;
 }
