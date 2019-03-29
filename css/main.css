@@ -384,3 +384,7 @@ table.fullwidth {
 #essays p, #publications p, #service p, #teaching p, #sub-teaching p, #videos p {
   margin-bottom: 30px;
 }
+
+.desktop-navigation {
+  margin-top: unset;
+}
