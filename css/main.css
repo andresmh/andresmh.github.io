@@ -6,7 +6,7 @@
 	height: 0;
 	overflow: hidden;
 	background: #000;
-	margin: 10px;
+	margin: 10px 0;
 	float: left;
 	}
 	.youtube-player iframe {
@@ -132,11 +132,7 @@ p, h3 {
 }
 
 
-#about, #edu, #interests, #positions, #experience, #training, #projects, #skills, #publications, #articles,
-#presentations, #press, #honors, #mentoring, #service, #teaching {
-	padding-top: 30px;
-	/*background: url(../imgs/divider.png) no-repeat bottom;*/
-}
+
 
 p, #contentWrapper li, h3 {
 	font-size: 20px;
@@ -385,3 +381,6 @@ table.fullwidth {
   width: 100%;
 }
 
+#essays p, #publications p, #service p, #teaching p, #sub-teaching p, #videos p {
+  margin-bottom: 30px;
+}

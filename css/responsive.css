@@ -122,6 +122,7 @@
   }
   .mobile-menu .menu {
     padding-left: 20px;
+    margin-top: unset;
   }
   .mobile-menu.show .menu {
     opacity: 1;
@@ -259,7 +260,7 @@
   section > table {
     width: 100%;
   }
- 
+
   section > ol {
     width: 90%;
   }
@@ -285,4 +286,3 @@
     width: 100%;
   }
 }
-
