@@ -122,6 +122,7 @@
   }
   .mobile-menu .menu {
     padding-left: 20px;
+    margin-top: unset;
   }
   .mobile-menu.show .menu {
     opacity: 1;
@@ -244,5 +245,44 @@
 @media screen and (max-width: 350px) {
   .youtube-player {
     height: 120px !important;
+  }
+}
+/*-------------------------------Tufte.css--------------------------------*/
+@media (max-width: 760px) {
+  body {
+    width: 84%;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  hr,
+  section > p,
+  section > footer,
+  section > table {
+    width: 100%;
+  }
+
+  section > ol {
+    width: 90%;
+  }
+  section > ul {
+    width: 90%;
+  }
+  figure {
+    max-width: 90%;
+  }
+  figcaption,
+  figure.fullwidth figcaption {
+    margin-right: 0%;
+    max-width: none;
+  }
+  label {
+    cursor: pointer;
+  }
+  div.table-wrapper,
+  table {
+    width: 85%;
+  }
+  img {
+    width: 100%;
   }
 }
