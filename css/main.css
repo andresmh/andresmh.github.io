@@ -118,27 +118,16 @@ address {
 	font-weight: normal;
 	font-style: normal;
 }
-h1, h2, h3, p, li, a {
-	 font-family: "et-book";
-}
 p, h3 {
 	line-height: 1.5em;
 }
-
-
-
 .hide {
 	display: none;
 }
-
-
-
-
-p, #contentWrapper li, h3 {
-	font-size: 20px;
+p, #contentWrapper li {
+	font-size: 17px;
 	color: #121212;
 }
-
 /* -------------------- navigation -------------------- */
 #info{
 	display: flex;
@@ -279,7 +268,7 @@ section li:last-child, #about p:last-child, #press li:last-child {
 @charset "UTF-8";
 /* Tufte CSS styles */
 html {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 body {
@@ -306,7 +295,7 @@ h2 {
 
 h3 {
   font-weight: 400;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   margin-top: 2rem;
   margin-bottom: 1.4rem;
   line-height: 1;
@@ -332,11 +321,9 @@ p.subtitle {
 }
 p,
 ul {
-  font-size: 1.2rem;
   line-height: 2rem;
 }
 ol {
-  font-size: 1.2rem;
   line-height: 2rem;
 }
 
