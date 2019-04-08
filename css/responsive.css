@@ -57,19 +57,15 @@
     -o-transition: 0.25s ease-in-out;
     transition: 0.25s ease-in-out;
   }
-
   .mob-menu-icon span:nth-child(1) {
     top: 0px;
   }
-
   .mob-menu-icon span:nth-child(2) {
     top: 10px;
   }
-
   .mob-menu-icon span:nth-child(3) {
     top: 20px;
   }
-
   .mob-menu-icon.open span:nth-child(1) {
     top: 10px;
     -webkit-transform: rotate(135deg);
@@ -77,12 +73,10 @@
     -o-transform: rotate(135deg);
     transform: rotate(135deg);
   }
-
   .mob-menu-icon.open span:nth-child(2) {
     opacity: 0;
     left: -60px;
   }
-
   .mob-menu-icon.open span:nth-child(3) {
     top: 10px;
     -webkit-transform: rotate(-135deg);
@@ -164,14 +158,7 @@
     margin: 1em 0;
     padding: 0;
   }
-  p.subtitle {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
-    display: block;
-    line-height: 1;
-  }
-  ol{
+  ol {
     line-height: 2rem;
   }
   #outerWrapper {
@@ -209,9 +196,71 @@
     background-size: 100%;
   }
 }
-@media (max-width: 660px) {
+@media (max-width: 760px) {
+  body {
+    width: 84%;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  hr,
+  section > p,
+  section > footer,
+  section > table {
+    width: 100%;
+  }
+  section > ol {
+    width: 90%;
+  }
+  section > ul {
+    width: 90%;
+  }
+  figure {
+    max-width: 90%;
+  }
+  figcaption,
+  figure.fullwidth figcaption {
+    margin-right: 0%;
+    max-width: none;
+  }
+  label {
+    cursor: pointer;
+  }
+  div.table-wrapper,
+  table {
+    width: 85%;
+  }
+  img {
+    width: 100%;
+  }
   h1 {
     font-size: 2.5rem;
+  }
+}
+@media (max-width: 575px) {
+  #info {
+    float: none;
+  }
+  body {
+    width: unset;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  html {
+    font-size: 14px;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  .align-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  span.floatRight {
+    text-align: right;
+  }
+  #outerWrapper {
+    padding: 5px;
   }
 }
 @media screen and (max-width: 560px) {
@@ -241,44 +290,5 @@
 @media screen and (max-width: 350px) {
   .youtube-player {
     height: 120px !important;
-  }
-}
-/*-------------------------------Tufte.css--------------------------------*/
-@media (max-width: 760px) {
-  body {
-    width: 84%;
-    padding-left: 8%;
-    padding-right: 8%;
-  }
-  hr,
-  section > p,
-  section > footer,
-  section > table {
-    width: 100%;
-  }
-
-  section > ol {
-    width: 90%;
-  }
-  section > ul {
-    width: 90%;
-  }
-  figure {
-    max-width: 90%;
-  }
-  figcaption,
-  figure.fullwidth figcaption {
-    margin-right: 0%;
-    max-width: none;
-  }
-  label {
-    cursor: pointer;
-  }
-  div.table-wrapper,
-  table {
-    width: 85%;
-  }
-  img {
-    width: 100%;
   }
 }
